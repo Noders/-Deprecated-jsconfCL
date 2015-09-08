@@ -19,9 +19,9 @@ var Inscribete = React.createClass({
     return(
         <form className="form-horizontal">
           <div className="form-group form-group-lg">
-            <div className="col-xs-8 col-xs-offset-2">
+            <div className="col-xs-12 col-md-8 col-md-offset-2">
               <input className="form-control" type="text" placeholder="Inscríbete aquí"/>
-              <a href="#" className="btn btn-large btn-success"> Inscríbete </a>
+              <a href="#" className="btn btn-large btnInscribir"> Inscríbete </a>
             </div>
           </div>
         </form>
@@ -40,10 +40,10 @@ var Title = React.createClass({
   render: function() {
     return (
       <div className="col-xs-12 block display-table full-height">
-        <div className="col-xs-12 text-center display-cell">
-          <div className="col-xs-12 text-center">
+        <div className="text-center display-cell">
+          <div className="text-center">
             <h1 className="site-name">#SeViene</h1>
-            <h1 className="site-desc">JSConf CL - 2016</h1>
+            <h2 className="site-desc"><span className="event">JSConf CL</span><span className="date">2016</span></h2>
             <div className="col-xs-6 col-xs-offset-3">
             <hr/>
           </div>
