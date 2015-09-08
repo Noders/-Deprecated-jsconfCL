@@ -1,56 +1,69 @@
-body{
-    background: rgba(247,223,30,1);
+body {
+    background: rgba(247, 223, 30, 1);
 }
-.block{
+
+.block {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.full-height{
+
+.full-height {
     height: 100%;
 }
-.full-height>[data-reactid]{
+
+.full-height>[data-reactid] {
     height: 100%;
 }
-.site-wrapper{width: 100%;}
-.img-centered{
+
+.site-wrapper {
+    width: 100%;
+}
+
+.img-centered {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 .site-name {
     font-family: 'Pacifico', cursive;
     color: #222;
     font-size: 4em;
 }
-.site-desc span.event{
+
+.site-desc .event {
     font-family: 'Oswald', cursive;
     font-size: 2em;
     line-height: 140%;
     background: #222;
-    color: rgba(247,223,30,1);
+    color: rgba(247, 223, 30, 1);
     padding: 0 15px;
 }
-.site-desc span.date{
+
+.site-desc .date {
     font-family: 'Pacifico', cursive;
     font-size: 2.6em;
     color: #222;
     display: block;
 }
+
 .social-links {
     padding: 0;
     list-style: none;
     margin: 15px 0;
 }
-.social-links .icon{
+
+.social-links .icon {
     margin: 10px 25px 10px 0;
     display: inline-block;
     font-size: 23px;
 }
-.social-links .icon p{
+
+.social-links .icon p {
     font-size: 20px;
 }
-.social-links .icon:hover p{
-}
+
+.social-links .icon:hover p {}
 
 .social-links .icon a {
     text-decoration: none;
@@ -94,7 +107,6 @@ body{
     color: #ff0084;
 }
 
-
 .logo {
     margin: 10px 10px 10px 0;
     -webkit-transition: all 0.3s ease-in-out;
@@ -108,7 +120,8 @@ body{
 .site-name-and-slogan {
     float: left;
 }
-.inscribete .email{
+
+.inscribete .email {
     text-align: center;
     font-size: 1.3em;
     height: 45px;
@@ -121,8 +134,9 @@ body{
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-.site-desc span.event,
-.site-desc span.date{
+
+.site-desc .event,
+.site-desc .date {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -130,47 +144,57 @@ body{
     transition: all 0.3s ease-in-out;
 }
 
-
-.site-name a {
+.site-name .btn {
     color: #ffffff;
 }
 
-.site-name a:hover {
+.site-name .btn:hover {
     text-decoration: none;
 }
 
 .site-slogan {
     font-size: 1.3em;
 }
-.site-slogan img{
+
+.site-slogan img {
     display: inline;
 }
-.btnInscribir{margin: 20px 0;border:1px solid #404040;color:#404040;}
+
+.btnInscribir {
+    margin: 20px 0;
+    border: 1px solid #404040;
+    color: #404040;
+    background-color: transparent;
+}
+.btnInscribir:focus {
+    margin: 20px 0;
+    border: 1px solid #404040;
+    color: #404040;
+    background-color: transparent;
+}
+
 @media (max-width:768px) {
     .site-name {
-
         font-size: 2.6em;
     }
-    .site-desc span.event{
+    .site-desc .event {
         font-size: 1.4em;
-            line-height: 120%;
+        line-height: 120%;
     }
-    .site-desc span.date{
-
+    .site-desc .date {
         font-size: 2.6em;
     }
 }
 
 @media (min-width:768px) {
     .site-name {
-
         font-size: 4.6em;
     }
-    .site-desc span.event{
+    .site-desc .event {
         font-size: 2.0em;
-            line-height: 120%;
+        line-height: 120%;
     }
-    .site-desc span.date{
+    .site-desc .date {
         font-size: 3.0em;
     }
 }

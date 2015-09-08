@@ -5,6 +5,7 @@ var DefaultRoute = Router.DefaultRoute;
 var NotFoundRoute = Router.NotFoundRoute;
 var RouteHandler = Router.RouteHandler;
 var css = require('../css/app.css');
+var css = require('animate.css/animate.min.css');
 
 //layout
 var Home = require('./home/home.jsx');
