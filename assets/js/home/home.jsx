@@ -43,7 +43,7 @@ var Title = React.createClass({
         <div className="col-xs-12 text-center display-cell">
           <div className="col-xs-12 text-center">
             <h1 className="site-name">#SeViene</h1>
-            <h1 className="site-name">JSConf CL - 2016</h1>
+            <h1 className="site-desc">JSConf CL - 2016</h1>
             <div className="col-xs-6 col-xs-offset-3">
             <hr/>
           </div>
