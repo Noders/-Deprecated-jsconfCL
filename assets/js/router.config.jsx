@@ -16,7 +16,7 @@ var NotFound = require('./notfound.jsx');
 var App = React.createClass({
 	render: function() {
 		return (
-			<div className="fullheight row site-wrapper">
+			<div className="fullheight site-wrapper">
 				<div className="container site-container full-height">
 					<RouteHandler/>
 				</div>
