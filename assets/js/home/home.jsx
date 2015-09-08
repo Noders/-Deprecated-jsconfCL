@@ -17,11 +17,11 @@ var JSLogoSVG = React.createClass({
 var Inscribete = React.createClass({
   render:function(){
     return(
-        <form className="form-horizontal">
+        <form className="form-horizontal inscribete">
           <div className="form-group form-group-lg">
             <div className="col-xs-12 col-md-8 col-md-offset-2">
-              <input className="form-control" type="text" placeholder="Inscríbete aquí"/>
-              <a href="#" className="btn btn-large btnInscribir"> Inscríbete </a>
+              <input className="form-control email" type="email" placeholder="Ingresa aquí tu email"/>
+              <a href="#" className="btn btn-large btnInscribir"> Quiero saber más! </a>
             </div>
           </div>
         </form>

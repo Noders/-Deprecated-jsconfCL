@@ -108,6 +108,11 @@ body{
 .site-name-and-slogan {
     float: left;
 }
+.inscribete .email{
+    text-align: center;
+    font-size: 1.3em;
+    height: 45px;
+}
 
 .site-name {
     -webkit-transition: all 0.3s ease-in-out;
@@ -116,6 +121,15 @@ body{
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+.site-desc span.event,
+.site-desc span.date{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
 
 .site-name a {
     color: #ffffff;
@@ -144,5 +158,19 @@ body{
     .site-desc span.date{
 
         font-size: 2.6em;
+    }
+}
+
+@media (min-width:768px) {
+    .site-name {
+
+        font-size: 4.6em;
+    }
+    .site-desc span.event{
+        font-size: 2.0em;
+            line-height: 120%;
+    }
+    .site-desc span.date{
+        font-size: 3.0em;
     }
 }
