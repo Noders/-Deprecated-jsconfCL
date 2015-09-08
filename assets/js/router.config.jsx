@@ -4,6 +4,8 @@ var Route = Router.Route;
 var DefaultRoute = Router.DefaultRoute;
 var NotFoundRoute = Router.NotFoundRoute;
 var RouteHandler = Router.RouteHandler;
+require('../css/googlefonts.js');
+var css = require('../css/app.css');
 
 //layout
 var Home = require('./home/home.jsx');

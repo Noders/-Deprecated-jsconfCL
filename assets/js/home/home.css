@@ -17,7 +17,11 @@ body{
     margin-right: auto;
 }
 .site-name {
-    font-family: 'Flamenco', cursive;
+    font-family: 'Pacifico', cursive;
+}
+.site-desc{
+    font-family: 'Oswald', cursive;
+
 }
 .social-links {
     padding: 0;
@@ -77,10 +81,6 @@ body{
     color: #ff0084;
 }
 
-
-.site-name {
-    font-family: 'Flamenco', cursive;
-}
 
 .logo {
     margin: 10px 10px 10px 0;

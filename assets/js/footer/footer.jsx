@@ -1,14 +1,15 @@
 var React = require('react');
+var Home = require('../home/home.jsx');
 require('./footer.css');
 module.exports = React.createClass({
   render : function(){
     return  (
-      <div className=" footer">
+      <div className="footer">
         <div className="col-xs-12">
           <div className="caption">
           	<h3 className="text-center">
 	 			<ul className="list-inline social-links">
-	              <li className="icon itunes"><a href="https://itunes.apple.com/cl/podcast/id1009061967" target="_blank"><i className="fa fa-fw fa-apple"></i><p>Itunes</p></a></li>
+	              <li className="icon itunes"><a href="https://itunes.apple.com/cl/podcast/id1009061967" target="_blank"><i className="fa fa-fw fa-apple"></i><p>iTunes</p></a></li>
 	              <li className="icon stitcher"><a href="http://www.stitcher.com/podcast/noderscast/" target="_blank"><i className="fa fa-fw fa-microphone"></i><p>Stitcher</p></a></li>
 	              <li className="icon rss"><a href="http://noderscast.noders.com/feed/podcast" target="_blank"><i className="fa fa-fw fa-rss"></i><p>RSS</p></a></li>
 	              <li className="icon twitter"><a href="http://www.twitter.com/noderscast" target="_blank"><i className="fa fa-fw fa-twitter"></i><p>Twitter</p></a></li>
