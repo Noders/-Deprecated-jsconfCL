@@ -186,7 +186,7 @@ body {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:768px) and (max-width: 1365px) {
     .site-name {
         font-size: 4.6em;
     }
@@ -196,5 +196,21 @@ body {
     }
     .site-desc .date {
         font-size: 3.0em;
+    }
+}
+
+@media (min-width:1366px) {
+    .site-name {
+        margin-top: 20px;
+        font-size: 6.8em;
+    }
+    .site-desc .event {
+        margin-top:20px;
+        font-size: 4.5em;
+        line-height: 120%;
+    }
+    .site-desc .date {
+        margin-top:20px;
+        font-size: 3.4em;
     }
 }
