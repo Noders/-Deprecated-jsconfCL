@@ -1,4 +1,6 @@
 var React = require('react');
+var classNames = require('classnames/dedupe');
+
 require('./home.css');
 
 
@@ -15,13 +17,45 @@ var JSLogoSVG = React.createClass({
 });
 
 var Inscribete = React.createClass({
+  getInitialState: function() {
+    return {
+      subscribed: false, 
+      busy:false, 
+      url:'http://api.noders.com:80/api/jsconfs',
+      email: ''
+    };
+  },
+  handleClick: function(event) {
+
+    if(!this.state.busy){
+      this.setState({busy:true});
+      var URL = this.state.url;
+      var xmlhttp=new XMLHttpRequest();
+      xmlhttp.open("POST",URL,true);
+      xmlhttp.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+      xmlhttp.onreadystatechange = function() {//Call a function when the state changes.
+          if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            this.setState({busy:false});
+            this.setState({subscribed: true});
+          }else{
+            this.setState({busy:false});
+            this.setState({subscribed: false});
+          }
+      }
+      xmlhttp.send(JSON.stringify({email:this.state.email}));
+    }
+  },
   render:function(){
+    var isSubscribed = this.state.subscribed ? 'subscribed' : 'not-subscribed';
+    var isBusy = this.state.busy ? 'busy' : 'not-busy';
+    var classes = classNames('col-xs-12','col-md-8','col-md-offset-2', isSubscribed, isBusy);
+
     return(
         <form className="form-horizontal inscribete">
           <div className="form-group form-group-lg">
-            <div className="col-xs-12 col-md-8 col-md-offset-2">
-              <input className="form-control email" type="email" placeholder="Ingresa aquí tu email"/>
-              <a href="#" className="btn btn-large btnInscribir"> Quiero saber más! </a>
+            <div className={classes}>
+              <input className="form-control email" type="email"  value={this.state.email} placeholder="Ingresa aquí tu email"/>
+              <a href="#" className="btn btn-large btnInscribir" onClick={this.handleClick}> Quiero saber más! </a>
             </div>
           </div>
         </form>

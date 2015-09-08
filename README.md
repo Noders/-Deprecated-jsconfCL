@@ -1,4 +1,5 @@
 # noderscast
 
-Sitio de Noderscast, hecho con ReactJS y Webpack
+Sitio realizado para la JSCONFCL
+ReactJS, Webpack y sudor
 
